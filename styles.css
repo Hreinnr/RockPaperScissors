@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #24272E;
+  background-color: #292C34;
 }
 
 header {
@@ -21,6 +21,11 @@ header > h1 {
   font-family: Asap, sans-serif;
 }
 
+img {
+  height: 70px;
+  width: 70px;
+}
+
 .score-board{
   margin: 20px auto;
   border: 3px solid white;
@@ -30,7 +35,6 @@ header > h1 {
   color: white;
   font-size: 46px;
   padding: 15px 20px;
-  font-family: Asap, sans-serif;
   position: relative;
 }
 
@@ -42,8 +46,54 @@ header > h1 {
   font-family: Asapm sans-serif;
 }
 
+.result-message {
+  font-size: 40px;
+  color: white
+}
+
+.result-message > p {
+  text-align: center;
+  font-weight: bold;
+  font-family: Asap, sans-sans-serif;
+}
+
+
+.choices {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.choice {
+  border: 4px solid white;
+  border-radius: 50%;
+  margin: 0 20px;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: #24272E;
+}
+
 #player-lable {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: -30px;
+}
+
+#computer-lable {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+#action-message {
+  text-align: center;
+  color: white;
+  font-family: Asap, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
 }
